@@ -32,7 +32,7 @@ export const authOptions: NextAuthOptions = {
           // console.log(decodedToken, "decoded token");
 
           return {
-            id: decodedToken?.id ?? decodedToken.sub ?? "" ,
+            id: decodedToken?.id ?? decodedToken?.sub ?? "" ,
             user: data.user,
             token: data.token,
           };
